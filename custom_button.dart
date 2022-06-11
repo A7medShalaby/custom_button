@@ -1,10 +1,11 @@
-import 'package:amazon_app/constants/global_variables.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomButton extends StatelessWidget {
   final String text;
   final VoidCallback onTap;
+  final Color color;
   const CustomButton({
     Key? key,
     required this.text,
@@ -24,7 +25,7 @@ class CustomButton extends StatelessWidget {
       ),
       style: ElevatedButton.styleFrom(
         minimumSize: Size(double.infinity, 60),
-        primary: GlobalVariables.secondaryColor,
+        primary: color,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
